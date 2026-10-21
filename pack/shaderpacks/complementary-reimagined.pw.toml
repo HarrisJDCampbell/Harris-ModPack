@@ -1,6 +1,6 @@
 name = "Complementary Shaders - Reimagined"
 filename = "ComplementaryReimagined_r5.9.3.zip"
-side = "both"
+side = "client"
 
 [download]
 url = "https://cdn.modrinth.com/data/HVnmMxH1/versions/Bqen1mJX/ComplementaryReimagined_r5.9.3.zip"

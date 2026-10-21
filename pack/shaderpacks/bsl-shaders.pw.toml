@@ -1,6 +1,6 @@
 name = "BSL Shaders"
 filename = "BSL_v10.1.8.zip"
-side = "both"
+side = "client"
 
 [download]
 url = "https://cdn.modrinth.com/data/Q1vvjJYV/versions/Y68yiql9/BSL_v10.1.8.zip"
