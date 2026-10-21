@@ -1,0 +1,11 @@
+# Build output
+dist/
+build/
+
+# Local test instances / downloaded jars
+.test/
+*.jar
+!tools/*.jar
+
+# macOS
+.DS_Store

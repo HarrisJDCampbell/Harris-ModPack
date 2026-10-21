@@ -1,0 +1,2 @@
+# Files packwiz should not track inside pack/
+.DS_Store
