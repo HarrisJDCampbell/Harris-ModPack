@@ -31,7 +31,7 @@ refresh:
 	cd $(PACK) && packwiz refresh
 
 outdated:
-	cd $(PACK) && packwiz update --all --yes=false 2>/dev/null </dev/null || true
+	cd $(PACK) && printf 'n\n' | packwiz update --all || true
 
 update:
 	cd $(PACK) && packwiz update --all -y
