@@ -157,4 +157,5 @@ a crash.
 Every mod belongs to its authors. Huge thanks to all of them, see each project's Modrinth page. Built by
 Harris Campbell. Olly is a real dog and he is doing great.
 
-The scripts and the Olly mod in this repo are MIT licensed (see `LICENSE`).
+The scripts, the Olly mod and the Harris mod in this repo are MIT licensed (see `LICENSE`). The mods the pack
+downloads are not part of this repo and stay under their own licenses.
