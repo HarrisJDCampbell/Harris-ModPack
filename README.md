@@ -8,7 +8,7 @@ This modpack started as a winter break project to keep my brain from turning to 
 My dog Olly made it in. He fights cows.
 </p>
 
-<p align="center"><b>Minecraft 1.21.1 · NeoForge 21.1 · 85 mods · one-command install</b></p>
+<p align="center"><b>Minecraft 1.21.1 · NeoForge 21.1 · 85 mods + 2 of our own · one-command install</b></p>
 
 ---
 
@@ -19,13 +19,18 @@ liquid XP (Enchantment Industry), actual cannons (Big Cannons), extra building b
 and kitchen automation (Slice & Dice, Central Kitchen with Farmer's Delight).
 
 **A bigger world.** Terralith biomes on Tectonic terrain, all of YUNG's structure overhauls, Dungeons & Taverns,
-Towns & Towers, and Distant Horizons so you can actually see the mountains.
+and Towns & Towers.
 
 **Adventure.** The Aether, Mowzie's Mobs and L_Ender's Cataclysm bosses, Naturalist wildlife, Artifacts,
 Better Combat with dodge rolls, Waystones, backpacks, gravestones.
 
-**Olly.** The custom part. Name any tamed dog **Olly** and he becomes Olly: bigger, tougher, faster, and he
-fights cows. Cows he takes down drop *Olly's Trophy*. Doggy Talents Next lets him level up and learn talents.
+**Olly.** The custom part. Name any tamed dog **Olly** and he becomes Olly: Olly-sized (a bit smaller than a
+wolf, like the real one), tougher, faster, and he fights cows. Cows he takes down drop *Olly's Trophy*. Doggy
+Talents Next lets him level up and learn talents.
+
+**The funny stuff.** Creepers still sneak up and hiss, then explode into **confetti**: no crater, no damage,
+just a party (toggle in `config/harris-common.toml`). **Mum's Shepherd's Pie** is its own food item with its own
+pixel art, and it's the best food in the game.
 
 **Polish.** A built-in field guide on first join, a custom advancement tab, splash texts, keybind conflicts
 already sorted, Complementary shaders one key away (`K`), and a performance stack (Sodium, Lithium, FerriteCore,
@@ -83,9 +88,13 @@ file in `pack/mods/` with a download URL and a hash, so git tracks exactly what 
 ```text
 pack/            packwiz source of truth (mods, shaders, default configs)
 olly/            the Olly mod: functions, advancements, loot, field guide, splashes
+mod/             the Harris Java mod (NeoForge, Gradle): confetti creepers, Mum's Shepherd's Pie
+art/             pixel art as text files, rendered into textures by `make art`
 scripts/
   modpack.py     install / sync / server / export / check
-  smoke_test.py  boots the real game into a test world and checks Olly works
+  smoke_test.py  boots the real game into a test world and checks everything works
+  pixelart.py    art/*.txt -> PNG textures
+  pixelize.py    any image (drawings, photos) -> clean 16x16 texture
 install.sh       one-command macOS install
 Makefile         shortcuts (run `make`)
 ```
@@ -96,6 +105,9 @@ Makefile         shortcuts (run `make`)
 | `cd pack && packwiz mr add <slug>` | Add a mod from Modrinth |
 | `make outdated` / `make update` | See / apply mod updates |
 | `make olly` | Rebuild the Olly jar after editing `olly/` |
+| `make mod` | Build the Harris Java mod into the pack (needs Java 21) |
+| `make art` | Render `art/*.txt` into textures |
+| `make pixelize IN=pic.png NAME=item` | Turn any image into a 16x16 item texture |
 | `make check` | Fast checks: hashes, sides, Olly jar up to date |
 | `make test` | Launch the game, load a test world, run the Olly checks, quit |
 | `make install` | Apply your changes to the Prism instance |
@@ -108,11 +120,32 @@ Talents dogs named Olly, tags them, and applies permanent attribute modifiers. T
 global loot modifier that adds a loot table only when the cow's killer has Olly's tag. The jar is zipped with
 fixed timestamps and no compression, so the same source always produces the same bytes and the same hash.
 
+### Making art
+
+Two ways to get a texture in:
+
+- **Draw it as text.** `art/mums_shepherds_pie.txt` is a palette plus a 16x16 grid of letters. `make art`
+  renders every file in `art/` to its PNG. Easy to tweak one pixel and see the diff in git.
+- **Bring a picture.** Draw it anywhere, or grab any picture, then
+  `make pixelize IN=~/Downloads/thing.png NAME=thing`. Big "pixel art" images are usually ~1024px with a wobbly grid
+  and hundreds of colours, so a plain resize looks like mush. The script removes the background, cuts the image
+  to a small palette, then picks each output pixel by majority vote of the block it covers, which keeps edges
+  crisp. A 16x preview lands in `.test/art/`.
+
+### How the Harris mod works
+
+`mod/` is a normal NeoForge 1.21.1 mod. Confetti creepers listen for `ExplosionEvent.Start`, which fires before
+any block or entity is touched; if the exploder is a creeper, the event is cancelled and the server sends one
+packet telling clients to spawn a burst of confetti particles (white sprites tinted a random party colour on the
+client). The pie is a regular food item with effects, a recipe and a tooltip. The jar is built with fixed
+timestamps so rebuilding unchanged code gives the same hash.
+
 ### How the smoke test works
 
 `scripts/smoke_test.py` writes a fresh world's `level.dat` by hand (a tiny NBT writer), drops in a test datapack,
 and launches the real client straight into it. The datapack summons a wolf named Olly, checks he got buffed,
-kills a cow with him, and confirms the trophy dropped and the field guide was handed out. Each check prints
+kills a cow with him, and confirms the trophy dropped and the field guide was handed out. It also lights a real
+creeper next to a glass block and passes only if the glass survives. Each check prints
 `SMOKE PASS/FAIL` to the log, which the script watches. It also fails on any load error from the Olly mod or on
 a crash.
 

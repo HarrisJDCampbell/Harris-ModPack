@@ -4,7 +4,13 @@
   "category": "olly:adventure",
   "sortnum": 0,
   "pages": [
-    { "type": "patchouli:text", "text": "$(l)Terralith$() adds 95+ biomes using vanilla blocks. $(l)Tectonic$() reshapes the terrain: real mountain ranges, deep valleys, and continents.$(br2)$(l)Distant Horizons$() renders low-detail terrain way past your normal view distance, so you can actually see those mountains." },
-    { "type": "patchouli:text", "text": "Structures you'll run into:$(li)$(l)YUNG's$(): overhauled dungeons, mineshafts, strongholds, temples, fortresses, monuments$(li)$(l)Dungeons & Taverns$(): taverns, wizard towers, illager camps$(li)$(l)Towns & Towers$(): more village styles and pillager outposts$(br)Find a snowy biome for the $(o)Winter Break$() advancement." }
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Terralith$() adds 95+ biomes using vanilla blocks. $(l)Tectonic$() reshapes the terrain: real mountain ranges, deep valleys, and continents.$(br2)Render distance starts at 16 chunks, so the big terrain actually reads. Turn it down in Video Settings if frames dip."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Structures you'll run into:$(li)$(l)YUNG's$(): overhauled dungeons, mineshafts, strongholds, temples, fortresses, monuments$(li)$(l)Dungeons & Taverns$(): taverns, wizard towers, illager camps$(li)$(l)Towns & Towers$(): more village styles and pillager outposts$(br)Find a snowy biome for the $(o)Winter Break$() advancement."
+    }
   ]
 }

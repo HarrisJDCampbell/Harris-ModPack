@@ -10,7 +10,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "If frames dip:$(li)Lower Distant Horizons quality (its button in Video Settings)$(li)Turn shaders off with $(l)K$()$(li)Drop render distance to 10$(br2)Memory is set to 8 GB in Prism (Edit Instance > Settings)."
+      "text": "If frames dip:$(li)Lower render distance to 12 (Video Settings)$(li)Turn shaders off with $(l)K$()$(li)Lower Entity Distance in Video Settings$(br2)Memory is set to 8 GB in Prism (Edit Instance > Settings)."
     }
   ]
 }

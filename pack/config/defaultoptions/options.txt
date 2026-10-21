@@ -1,4 +1,4 @@
-renderDistance:12
+renderDistance:16
 simulationDistance:8
 maxFps:144
 enableVsync:true

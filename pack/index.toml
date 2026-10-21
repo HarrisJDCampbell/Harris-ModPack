@@ -6,7 +6,7 @@ hash = "68c9483799a8c4672102c13c853dde7f49a774e49dc234903920ccd3df5dfb42"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
-hash = "6af5db2e46b10128349bf538158bb91b8b091fcb7757ca31b7da400885555734"
+hash = "bfdd1a5ef62a1c73c9c3f25f37c35f41e4862134776fa424d5ebfc1de7383de4"
 
 [[files]]
 file = "config/iris.properties"
@@ -144,11 +144,6 @@ hash = "a6967d761dde867ccc1af53dc9f4e530eb9917a9cb21d0fc15708e8cd2c0f2ba"
 metafile = true
 
 [[files]]
-file = "mods/distanthorizons.pw.toml"
-hash = "0c20fea3407ed0db85b4b171f1820a24987f2659946fadd30bae044205041b09"
-metafile = true
-
-[[files]]
 file = "mods/doggy-talents-next.pw.toml"
 hash = "4dc4b35767b1869c41addaa0cd8f26d8ec55d01e75efd3a2a01dd43420cc7f45"
 metafile = true
@@ -279,7 +274,7 @@ metafile = true
 
 [[files]]
 file = "mods/olly-1.1.0.jar"
-hash = "c50b3ee23336c3dcd21a437de986ba53bbfedc35d2787586e81bda8bac046573"
+hash = "61aa4281fe3154a54056980658daf5822ccc1e29c4b978f3daae3024ac1d85f8"
 
 [[files]]
 file = "mods/owo-lib.pw.toml"
