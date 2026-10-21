@@ -1,0 +1,16 @@
+{
+  "name": "What Is This Pack?",
+  "icon": "minecraft:writable_book",
+  "category": "olly:start",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Harris ModPack is vanilla-plus with teeth. The world looks bigger ($(l)Terralith$(), $(l)Tectonic$()), the structures are worth exploring ($(l)YUNG's$(), $(l)Dungeons & Taverns$(), $(l)Towns & Towers$()), and the late game has real bosses.$(br2)The other half is engineering: $(l)Create$() and a stack of add-ons."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Every mod here is picked to feel like it belongs in Minecraft. No tech-tree spreadsheets, no 400-item crafting chains.$(br2)Stuck on a recipe? Hover any item and press $(l)R$() in your inventory for recipes and $(l)U$() for uses (the item list on the right is searchable).$(br2)Stuck on a Create part? Hover it and hold $(l)W$() to watch a Ponder scene."
+    }
+  ]
+}

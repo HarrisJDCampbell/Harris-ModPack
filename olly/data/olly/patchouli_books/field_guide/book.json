@@ -1,0 +1,10 @@
+{
+  "name": "Harris Field Guide",
+  "landing_text": "Hey, welcome in.$(br2)This pack started as a winter break project to keep my brain from turning to mush. It turned into a world with $(l)Create$() machines, new dimensions, bosses, and one very good boy named $(l)Olly$().$(br2)Start with $(l)Start Here$(), then go find a dog.",
+  "subtitle": "Harris ModPack",
+  "use_resource_pack": true,
+  "model": "patchouli:book_brown",
+  "book_texture": "patchouli:textures/gui/book_brown.png",
+  "show_progress": false,
+  "version": 1
+}

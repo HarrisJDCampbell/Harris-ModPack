@@ -1,0 +1,20 @@
+{
+  "name": "Combat & Bosses",
+  "icon": "minecraft:iron_sword",
+  "category": "olly:adventure",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Better Combat$(): weapons have real swing arcs and combos. Hold attack to keep swinging. Two-handers hit harder but take both hands.$(br2)$(l)Combat Roll$(): press $(l)R$() to dodge-roll. It has a short cooldown, and there are enchantments that let you roll farther and more often."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Mowzie's Mobs$(): the Ferrous Wroughtnaut guards a cave, the Frostmaw sleeps in snowy places, and the Umvuthana live in savannas.$(br2)$(l)L_Ender's Cataclysm$(): the big ones. Ender Guardian, Ignis, Netherite Monstrosity, the Harbinger, the Leviathan and more, each in its own structure. Beat one for $(o)Bigger Than a Cow$()."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Artifacts$(): rare trinkets in chests (and mimics, careful). Wear them in your accessory slots.$(br2)Trinket slots: $(l)G$() opens Curios, $(l)H$() opens Accessories, $(l)I$() opens Aether gear. Each item goes where its mod puts it.$(br2)$(l)Naturalist$() adds bears, deer, snakes and more wildlife to the overworld."
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Meet Olly",
+  "icon": "minecraft:name_tag",
+  "category": "olly:olly",
+  "sortnum": 0,
+  "pages": [
+    { "type": "patchouli:text", "text": "Olly is real. He's my dog, and he fights cows.$(br2)Name any tamed wolf (or Doggy Talents dog) $(l)Olly$() and he becomes Olly:$(li)$(l)+20 health$()$(li)$(l)+4 bite damage$()$(li)$(l)15% faster$()$(li)$(l)15% bigger$(), because he's a big boy" },
+    { "type": "patchouli:text", "text": "$(l)He fights cows.$() When Olly sees a cow nearby he gets fired up: speed and strength, plus a little angry particle so you know he means it.$(br2)Every cow Olly takes down drops $(l)Olly's Trophy$(), a glowing bone. Collect one for the $(o)He Fights Cows$() challenge.$(br2)Rename him and he goes back to being a regular dog. Don't do that to him." },
+    { "type": "patchouli:spotlight", "item": "minecraft:bone", "title": "Olly's Trophy", "text": "A shiny bone. Only drops from cows that Olly personally handled." }
+  ]
+}

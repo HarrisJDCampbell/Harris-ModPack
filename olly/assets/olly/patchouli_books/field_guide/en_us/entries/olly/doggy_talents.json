@@ -1,0 +1,24 @@
+{
+  "name": "Doggy Talents",
+  "icon": "doggytalents:training_treat",
+  "category": "olly:olly",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Feed a $(l)Training Treat$() to a tamed wolf to turn it into a $(l)Doggy Talents$() dog. These dogs level up and learn $(l)talents$(): pack mule, guard dog, rescue dog, fisher dog, and more.$(br2)Your starter kit has 3 treats. Olly works on both regular wolves and Doggy Talents dogs, so naming him still works after training."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "doggytalents:whistle",
+      "title": "Whistle",
+      "text": "Calls, sits, and sends your dogs. While holding it, the number keys pick a whistle mode."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "doggytalents:dog_bed",
+      "title": "Dog Bed",
+      "text": "Give your dog a home base. Dogs rest at their bed, and it's how you keep track of where everyone lives."
+    }
+  ]
+}

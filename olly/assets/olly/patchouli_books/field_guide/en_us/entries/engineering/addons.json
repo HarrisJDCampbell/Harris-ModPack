@@ -1,0 +1,10 @@
+{
+  "name": "The Add-ons",
+  "icon": "create:brass_ingot",
+  "category": "olly:engineering",
+  "sortnum": 1,
+  "pages": [
+    { "type": "patchouli:text", "text": "$(l)Crafts & Additions$(): electricity. Alternators turn rotation into power, electric motors turn it back.$(br2)$(l)Big Cannons$(): yes, real cannons. Build them out of cannon blocks, load shells, and do not aim at your base.$(br2)$(l)Copycats+ / Deco / Connected$(): more building blocks and more ways to hide your machines." },
+    { "type": "patchouli:text", "text": "$(l)Slice & Dice / Central Kitchen$(): automate Farmer's Delight. The Slicer is a cutting board on a stick, and deployers can cook.$(br2)$(l)Farmer's Delight$() itself adds real meals. Full stomach = faster healing." }
+  ]
+}

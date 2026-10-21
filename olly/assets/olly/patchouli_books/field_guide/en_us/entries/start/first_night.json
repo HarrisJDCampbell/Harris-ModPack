@@ -1,0 +1,10 @@
+{
+  "name": "First Night Checklist",
+  "icon": "minecraft:red_bed",
+  "category": "olly:start",
+  "sortnum": 1,
+  "pages": [
+    { "type": "patchouli:text", "text": "$(li)Punch trees, make tools. Classic.$(li)Your starter kit has a name tag that already says $(l)Olly$(). Find a wolf.$(li)Bring $(l)bones$() to tame it, then use the name tag.$(li)Make a $(l)sleeping bag$() (Comforts) if you want to skip a night far from home without moving your spawn.$(li)Craft a $(l)backpack$() early. Future you will be grateful." },
+    { "type": "patchouli:text", "text": "$(l)If you die$(), your stuff goes into a $(l)gravestone$() where you fell, not across the floor. Walk back and open it.$(br2)$(l)Carry On$(): sneak and right-click with empty hands to pick up chests, spawners-adjacent regrets, and most animals." }
+  ]
+}

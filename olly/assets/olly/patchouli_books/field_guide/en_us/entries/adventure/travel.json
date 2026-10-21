@@ -1,0 +1,10 @@
+{
+  "name": "Getting Around",
+  "icon": "waystones:waystone",
+  "category": "olly:adventure",
+  "sortnum": 1,
+  "pages": [
+    { "type": "patchouli:text", "text": "$(l)Waystones$() spawn in villages and can be crafted. Activate one and you can teleport back to it from any other waystone, or with a Warp Scroll / Warp Stone.$(br2)Press $(l)M$() for the full world map. Press $(l)N$() to drop a waypoint, $(l)U$() to list them." },
+    { "type": "patchouli:text", "text": "$(l)The Aether$(): build a portal frame out of $(l)glowstone$() (same shape as a Nether portal) and light it with a $(l)water bucket$(). Floating islands, sky dungeons, flying mounts.$(br2)Enter it for the $(o)Touch Clouds$() advancement." }
+  ]
+}

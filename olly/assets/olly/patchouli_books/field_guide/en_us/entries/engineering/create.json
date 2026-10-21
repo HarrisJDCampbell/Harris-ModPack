@@ -1,0 +1,11 @@
+{
+  "name": "Create",
+  "icon": "create:cogwheel",
+  "category": "olly:engineering",
+  "sortnum": 0,
+  "pages": [
+    { "type": "patchouli:text", "text": "Minecraft taught me everything I know about engineering, and $(l)Create$() is the final exam.$(br2)Start with a $(l)water wheel$() or $(l)windmill$() for rotation, run it through $(l)shafts$() and $(l)cogwheels$(), and power things like the $(l)millstone$(), $(l)mechanical press$() and $(l)mixer$()." },
+    { "type": "patchouli:text", "text": "The key to Create is $(l)Ponder$(): hover any Create item and hold $(l)W$() for an animated how-to.$(br2)First real goal: $(l)Andesite Casing$() (andesite alloy + stripped log). That unlocks almost everything else.$(br2)Wear $(l)Engineer's Goggles$() to read stress and speed." },
+    { "type": "patchouli:spotlight", "item": "create:andesite_casing", "title": "Andesite Casing", "text": "Make one for the $(o)Minecraft Taught Me Engineering$() advancement." }
+  ]
+}

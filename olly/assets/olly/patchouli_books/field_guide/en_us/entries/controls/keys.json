@@ -1,0 +1,16 @@
+{
+  "name": "Keybind Cheat Sheet",
+  "icon": "minecraft:tripwire_hook",
+  "category": "olly:controls",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(l)R$(): dodge roll$(li)$(l)B$(): open backpack$(li)$(l)M$(): world map$(li)$(l)N$(): new waypoint$(li)$(l)U$(): waypoint list$(li)$(l)Y$(): minimap settings$(li)$(l)K$(): shaders on/off$(li)$(l)O$(): pick a shader pack$(li)$(l)G$() / $(l)H$() / $(l)I$(): trinket slots (Curios / Accessories / Aether)$(li)$(l)Left Alt$(): Create toolbelt / radial menus"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "In inventories:$(li)$(l)R$() over an item: recipes$(li)$(l)U$() over an item: uses$(li)$(l)W$() over a Create item: Ponder$(br2)Every bind can be changed in Options > Controls. The $(l)search box$() there (Controlling) finds any key, and conflicts show in red."
+    }
+  ]
+}

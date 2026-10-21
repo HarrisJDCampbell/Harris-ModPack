@@ -1,0 +1,10 @@
+{
+  "name": "XP Farm Ethics",
+  "icon": "create_enchantment_industry:experience_bucket",
+  "category": "olly:engineering",
+  "sortnum": 2,
+  "pages": [
+    { "type": "patchouli:text", "text": "$(l)Create: Enchantment Industry$() makes experience a $(l)liquid$(). Pipe it, store it, bottle it.$(br2)The $(l)Disenchanter$() pulls XP out of enchanted junk, the $(l)Blaze Enchanter$() spends it on enchants, and the $(l)Printer$() copies enchanted books." },
+    { "type": "patchouli:text", "text": "A note on ethics. You will build a mob grinder. It will be efficient. You will feel nothing.$(br2)That's fine. Just don't let Olly see it.$(br2)Fill a bucket with liquid experience for the $(o)XP Farm Ethics$() advancement." }
+  ]
+}
