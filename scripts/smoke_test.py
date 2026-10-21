@@ -34,7 +34,8 @@ WORLD_NAME = "SmokeTest"
 TIMEOUT_S = 420
 
 # Checks the test datapack reports. Each must print "SMOKE PASS <name>".
-EXPECTED = ["olly_blessed", "olly_buffed", "olly_trophy", "guide_book", "advancements"]
+EXPECTED = ["olly_blessed", "olly_buffed", "olly_sized", "olly_trophy", "guide_book", "advancements",
+            "creeper_confetti", "surprise_party", "shepherds_pie"]
 
 # Log lines that mean something in our own content is broken.
 FATAL_PATTERNS = [
@@ -45,6 +46,10 @@ FATAL_PATTERNS = [
     r"Couldn't parse data file olly:",
     r"Failed to load book olly:",
     r"\[olly\].*(ERROR|Exception)",
+    r"Failed to load function harris:",
+    r"Couldn't parse element .*harris:",
+    r"Couldn't load advancement harris:",
+    r"Parsing error loading recipe harris:",
 ]
 
 
@@ -128,6 +133,7 @@ TEST_FUNCTIONS = {
     "start": """\
 say SMOKE START
 forceload add ~ ~
+tp @a ~ ~1 ~
 summon minecraft:wolf ~2 ~ ~ {CustomName:'"Olly"',Tags:["smoke.dog"],PersistenceRequired:1b}
 # Give him an owner so the owner greeting + advancement path runs too.
 data modify entity @e[type=minecraft:wolf,tag=smoke.dog,limit=1] Owner set from entity @p UUID
@@ -138,6 +144,8 @@ execute if entity @e[type=minecraft:wolf,tag=smoke.dog,tag=olly.blessed] run say
 execute unless entity @e[type=minecraft:wolf,tag=smoke.dog,tag=olly.blessed] run say SMOKE FAIL olly_blessed
 execute as @e[type=minecraft:wolf,tag=smoke.dog] if data entity @s attributes[{id:"minecraft:generic.max_health"}].modifiers[{id:"olly:good_boy_health"}] run say SMOKE PASS olly_buffed
 execute as @e[type=minecraft:wolf,tag=smoke.dog] unless data entity @s attributes[{id:"minecraft:generic.max_health"}].modifiers[{id:"olly:good_boy_health"}] run say SMOKE FAIL olly_buffed
+execute as @e[type=minecraft:wolf,tag=smoke.dog] if data entity @s attributes[{id:"minecraft:generic.scale"}].modifiers[{id:"olly:olly_sized"}] run say SMOKE PASS olly_sized
+execute as @e[type=minecraft:wolf,tag=smoke.dog] unless data entity @s attributes[{id:"minecraft:generic.scale"}].modifiers[{id:"olly:olly_sized"}] run say SMOKE FAIL olly_sized
 summon minecraft:cow ~4 ~ ~ {Tags:["smoke.cow"],NoAI:1b}
 execute as @e[type=minecraft:cow,tag=smoke.cow] run damage @s 1000 minecraft:mob_attack by @e[type=minecraft:wolf,tag=smoke.dog,limit=1]
 schedule function smoke:check_trophy 20t
@@ -149,6 +157,24 @@ execute if entity @a[nbt={Inventory:[{id:"patchouli:guide_book"}]}] run say SMOK
 execute unless entity @a[nbt={Inventory:[{id:"patchouli:guide_book"}]}] run say SMOKE FAIL guide_book
 execute if entity @a[advancements={olly:root=true,olly:good_boy=true}] run say SMOKE PASS advancements
 execute unless entity @a[advancements={olly:root=true,olly:good_boy=true}] run say SMOKE FAIL advancements
+schedule function smoke:creeper 10t
+""",
+    # A lit creeper right next to a glass block: a real explosion would break the
+    # glass; a confetti creeper leaves it standing and just disappears.
+    "creeper": """\
+setblock ~8 ~ ~1 minecraft:glass
+summon minecraft:creeper ~8 ~ ~ {Tags:["smoke.creeper"],Fuse:5s,ignited:1b,NoAI:1b}
+give @a harris:mums_shepherds_pie
+schedule function smoke:check_creeper 40t
+""",
+    "check_creeper": """\
+execute unless entity @e[tag=smoke.creeper] if block ~8 ~ ~1 minecraft:glass run say SMOKE PASS creeper_confetti
+execute unless block ~8 ~ ~1 minecraft:glass run say SMOKE FAIL creeper_confetti
+execute if entity @e[tag=smoke.creeper] run say SMOKE FAIL creeper_confetti
+execute if entity @a[advancements={harris:surprise_party=true}] run say SMOKE PASS surprise_party
+execute unless entity @a[advancements={harris:surprise_party=true}] run say SMOKE FAIL surprise_party
+execute if entity @a[nbt={Inventory:[{id:"harris:mums_shepherds_pie"}]}] run say SMOKE PASS shepherds_pie
+execute unless entity @a[nbt={Inventory:[{id:"harris:mums_shepherds_pie"}]}] run say SMOKE FAIL shepherds_pie
 say SMOKE DONE
 """,
 }
