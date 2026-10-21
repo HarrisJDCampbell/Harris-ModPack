@@ -1,0 +1,10 @@
+{
+  "item.harris.mums_shepherds_pie": "Mum's Shepherd's Pie",
+  "item.harris.mums_shepherds_pie.lore1": "Mum's recipe. Not up for discussion.",
+  "item.harris.mums_shepherds_pie.lore2": "Better than yours.",
+  "harris.configuration.title": "Harris Config",
+  "harris.configuration.confettiCreepers": "Confetti Creepers",
+  "harris.configuration.confettiCreepers.tooltip": "Creepers explode into confetti instead of blowing up.",
+  "harris.configuration.confettiAmount": "Confetti Amount",
+  "harris.configuration.confettiAmount.tooltip": "Confetti pieces per creeper (charged creepers throw twice as many)."
+}

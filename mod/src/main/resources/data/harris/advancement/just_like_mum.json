@@ -1,0 +1,10 @@
+{
+  "parent": "olly:root",
+  "display": {
+    "icon": { "id": "harris:mums_shepherds_pie" },
+    "title": { "text": "Just Like Mum Makes" },
+    "description": { "text": "Eat Mum's Shepherd's Pie. Nothing else comes close." },
+    "frame": "goal"
+  },
+  "criteria": { "ate": { "trigger": "minecraft:consume_item", "conditions": { "item": { "items": "harris:mums_shepherds_pie" } } } }
+}

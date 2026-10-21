@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "minecraft:cooked_mutton" },
+    { "item": "minecraft:baked_potato" },
+    { "item": "minecraft:baked_potato" },
+    { "item": "minecraft:carrot" },
+    { "item": "minecraft:bowl" }
+  ],
+  "result": { "id": "harris:mums_shepherds_pie", "count": 1 },
+  "neoforge:conditions": [ { "type": "neoforge:not", "value": { "type": "neoforge:mod_loaded", "modid": "farmersdelight" } } ]
+}

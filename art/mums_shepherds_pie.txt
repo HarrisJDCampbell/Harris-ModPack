@@ -1,0 +1,29 @@
+# Mum's Shepherd's Pie: heaped mash with browned peaks in a terracotta dish.
+out: mod/src/main/resources/assets/harris/textures/item/mums_shepherds_pie.png
+palette:
+  O = 74 38 24       # dish outline
+  d = 176 92 54      # dish
+  h = 214 130 84     # dish highlight
+  s = 128 64 38      # dish shadow
+  m = 238 210 148    # mash
+  M = 252 238 196    # mash highlight
+  b = 206 146 66     # browned peak
+  B = 156 98 42      # dark browned edge
+  g = 112 54 28      # gravy bubbling at the rim
+grid:
+  ................
+  ................
+  .....Bb...Bb....
+  ...BbbMb.bbMb...
+  ..BbMmmmbbMmmBb.
+  .OmMmmmmMmmmmmmO
+  OmmMmmBbmmmMBbmO
+  OmMmmbbMmmmbbMmO
+  OgmmmmMmmmmmmmgO
+  OsggmmmmmmmgggsO
+  OhhhhhhhhhhhhhsO
+  OddddddddddddssO
+  .OdddddddddddsO.
+  ..OOOOOOOOOOOO..
+  ................
+  ................
