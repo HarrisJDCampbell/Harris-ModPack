@@ -6,6 +6,10 @@ dist/
 
 # Python
 __pycache__/
+.venv/
+
+# Editor
+.vscode/
 
 # macOS
 .DS_Store
