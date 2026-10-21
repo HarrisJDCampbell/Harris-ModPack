@@ -4,7 +4,7 @@
 #   ./install.sh            install or update, then open Prism Launcher
 #   ./install.sh --no-open  same, but don't open Prism
 #
-# Installs (via Homebrew, if missing): Python 3, Java 21, Prism Launcher.
+# Installs (via Homebrew, if missing): Python 3.11+, Java 21, Prism Launcher.
 # Then builds the Prism instance "Harris ModPack" with every mod downloaded and
 # hash-checked. Re-run it any time to update; it only downloads what changed.
 set -euo pipefail
@@ -25,11 +25,20 @@ fi
 need_formula() { brew list --formula "$1" >/dev/null 2>&1 || { bold "Installing $1"; brew install "$1"; }; }
 need_cask()    { brew list --cask "$1" >/dev/null 2>&1 || [[ -d "/Applications/$2" ]] || { bold "Installing $2"; brew install --cask "$1"; }; }
 
-need_formula python@3.13
+# Any Python 3.11+ works (the tool uses tomllib); install one only if needed.
+PY=""
+for cand in python3 python3.14 python3.13 python3.12 python3.11; do
+  if command -v "$cand" >/dev/null 2>&1 && "$cand" -c 'import sys; sys.exit(sys.version_info < (3, 11))'; then
+    PY="$(command -v "$cand")"; break
+  fi
+done
+if [[ -z "$PY" ]]; then
+  need_formula python@3.13
+  PY="$(brew --prefix python@3.13)/bin/python3.13"
+fi
 need_formula openjdk@21
 need_cask prismlauncher "Prism Launcher.app"
 
-PY="$(brew --prefix python@3.13)/bin/python3.13"
 "$PY" scripts/modpack.py install
 
 if [[ "${1:-}" != "--no-open" ]]; then
