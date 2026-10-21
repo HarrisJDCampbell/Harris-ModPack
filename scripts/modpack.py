@@ -40,6 +40,10 @@ USER_AGENT = "HarrisJDCampbell/Harris-ModPack (github.com/HarrisJDCampbell/Harri
 MANIFEST_NAME = ".harris-modpack.json"
 INSTANCE_ID = "HarrisModPack"
 ICON_KEY = "harris_modpack"
+# GC flags shared by the Prism instance, the server and the smoke test, so the test
+# always runs what players run. G1, not ZGC: on macOS, ZGC crashes the game inside
+# Apple's Metal driver within seconds of loading a world (reproduced on Java 21).
+GC_ARGS = ["-XX:+UseG1GC", "-XX:MaxGCPauseMillis=50"]
 JAVA21_CANDIDATES = [
     "/opt/homebrew/opt/openjdk@21/bin/java",
     "/usr/local/opt/openjdk@21/bin/java",
@@ -283,8 +287,7 @@ def write_instance(inst: Path, pack: dict, memory_mb: int) -> None:
         "MinMemAlloc": "2048",
         "MaxMemAlloc": str(memory_mb),
         "OverrideJavaArgs": "true",
-        # Generational ZGC: short GC pauses = fewer stutters with a big modded heap.
-        "JvmArgs": "-XX:+UseZGC -XX:+ZGenerational",
+        "JvmArgs": " ".join(GC_ARGS),
         "OverrideWindow": "true",
         "LaunchMaximized": "false",
         "MinecraftWinWidth": "1600",
@@ -352,7 +355,7 @@ def cmd_server(args: argparse.Namespace) -> None:
         subprocess.run([java, "-jar", str(installer), "--install-server", str(server)],
                        cwd=server, check=True, stdout=subprocess.DEVNULL)
         java_args = server / "user_jvm_args.txt"
-        java_args.write_text(f"-Xms2G\n-Xmx{args.memory}M\n-XX:+UseZGC\n-XX:+ZGenerational\n")
+        java_args.write_text("\n".join(["-Xms2G", f"-Xmx{args.memory}M", *GC_ARGS]) + "\n")
     if not (server / "eula.txt").exists() or "eula=true" not in (server / "eula.txt").read_text():
         warn("Before the first start, read https://aka.ms/MinecraftEULA and set eula=true in eula.txt")
     say(f"Server ready in {server}. Start it with: cd '{server}' && ./run.sh nogui")

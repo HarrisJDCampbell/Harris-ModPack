@@ -42,7 +42,7 @@ cd Harris-ModPack
 ```
 
 That installs Python, Java 21 and [Prism Launcher](https://prismlauncher.org) if you don't have them, builds a
-Prism instance called **Harris ModPack** (8 GB RAM, tuned GC, every mod downloaded and hash-checked), and opens
+Prism instance called **Harris ModPack** (8 GB RAM, every mod downloaded and hash-checked), and opens
 Prism. First time only: sign in with your Microsoft account in Prism. Then select the pack and hit **Launch**.
 
 **Updating:** `git pull && ./install.sh`. Only changed files are downloaded, and mods that were removed from the

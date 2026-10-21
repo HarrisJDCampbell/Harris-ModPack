@@ -194,7 +194,7 @@ def main() -> int:
 
     nf = pack["versions"]["neoforge"]
     cmd = [str(portablemc()), "--main-dir", str(TEST / "mc"), "start", f"neoforge::{nf}",
-           "--mc-dir", str(GAME), "--jvm", java, "--jvm-arg=-Xmx6G,-Xms2G",
+           "--mc-dir", str(GAME), "--jvm", java, "--jvm-arg=" + ",".join(["-Xmx8G", "-Xms2G", *modpack.GC_ARGS]),
            "-u", "SmokeTester", "--join-world", WORLD_NAME]
     modpack.say(f"Launching {pack['name']} {pack['version']} (a game window will open)")
     proc = subprocess.Popen(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
