@@ -1,0 +1,11 @@
+{
+  "parent": "olly:root",
+  "display": {
+    "icon": { "id": "create:andesite_casing" },
+    "title": { "text": "Minecraft Taught Me Engineering" },
+    "description": { "text": "Make Andesite Casing. Everything after this is a gearbox problem." }
+  },
+  "criteria": {
+    "casing": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ { "items": "create:andesite_casing" } ] } }
+  }
+}

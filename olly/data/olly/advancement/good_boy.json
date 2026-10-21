@@ -1,0 +1,10 @@
+{
+  "parent": "olly:root",
+  "display": {
+    "icon": { "id": "minecraft:name_tag" },
+    "title": { "text": "Who's a Good Boy?" },
+    "description": { "text": "Name a dog Olly. He knows what he has to do." },
+    "frame": "goal"
+  },
+  "criteria": { "named_olly": { "trigger": "minecraft:impossible" } }
+}

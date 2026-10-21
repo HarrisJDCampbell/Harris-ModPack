@@ -1,0 +1,12 @@
+{
+  "display": {
+    "icon": { "id": "minecraft:bone" },
+    "title": { "text": "Harris ModPack", "color": "gold" },
+    "description": { "text": "A winter break project that got out of hand. Olly approves." },
+    "background": "minecraft:textures/block/spruce_planks.png",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": { "joined": { "trigger": "minecraft:tick" } },
+  "rewards": { "function": "olly:welcome" }
+}

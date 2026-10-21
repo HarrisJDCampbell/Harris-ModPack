@@ -1,0 +1,14 @@
+{
+  "parent": "olly:root",
+  "display": {
+    "icon": { "id": "minecraft:snowball" },
+    "title": { "text": "Winter Break" },
+    "description": { "text": "Find a snowy biome. That's where this whole pack started." }
+  },
+  "criteria": {
+    "snow": {
+      "trigger": "minecraft:location",
+      "conditions": { "player": [ { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "location": { "biomes": "#c:is_snowy" } } } ] }
+    }
+  }
+}

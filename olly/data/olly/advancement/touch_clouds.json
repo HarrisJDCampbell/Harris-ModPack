@@ -1,0 +1,11 @@
+{
+  "parent": "olly:winter_break",
+  "display": {
+    "icon": { "id": "minecraft:feather" },
+    "title": { "text": "Touch Clouds" },
+    "description": { "text": "Enter the Aether. Touching grass was too easy." }
+  },
+  "criteria": {
+    "aether": { "trigger": "minecraft:changed_dimension", "conditions": { "to": "aether:the_aether" } }
+  }
+}

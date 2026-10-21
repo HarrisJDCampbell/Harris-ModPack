@@ -1,0 +1,18 @@
+{
+  "parent": "olly:good_boy",
+  "display": {
+    "icon": { "id": "minecraft:bone", "components": { "minecraft:enchantment_glint_override": true } },
+    "title": { "text": "He Fights Cows" },
+    "description": { "text": "Collect Olly's Trophy. He fights cows. He wins." },
+    "frame": "challenge"
+  },
+  "criteria": {
+    "trophy": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [ { "items": "minecraft:bone", "predicates": { "minecraft:custom_data": "{olly_trophy:1b}" } } ]
+      }
+    }
+  },
+  "rewards": { "experience": 100 }
+}

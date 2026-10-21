@@ -1,0 +1,12 @@
+{
+  "parent": "olly:engineer",
+  "display": {
+    "icon": { "id": "create_enchantment_industry:experience_bucket" },
+    "title": { "text": "XP Farm Ethics" },
+    "description": { "text": "Fill a bucket with liquid experience. Don't think too hard about where it came from." },
+    "frame": "goal"
+  },
+  "criteria": {
+    "bucket": { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ { "items": "create_enchantment_industry:experience_bucket" } ] } }
+  }
+}

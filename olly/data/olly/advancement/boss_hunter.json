@@ -1,0 +1,18 @@
+{
+  "parent": "olly:touch_clouds",
+  "display": {
+    "icon": { "id": "minecraft:netherite_sword" },
+    "title": { "text": "Bigger Than a Cow" },
+    "description": { "text": "Defeat a Cataclysm boss. Olly would have helped, but he was busy." },
+    "frame": "challenge"
+  },
+  "criteria": {
+    "ender_guardian": { "trigger": "minecraft:player_killed_entity", "conditions": { "entity": [ { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "type": "cataclysm:ender_guardian" } } ] } },
+    "ignis": { "trigger": "minecraft:player_killed_entity", "conditions": { "entity": [ { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "type": "cataclysm:ignis" } } ] } },
+    "netherite_monstrosity": { "trigger": "minecraft:player_killed_entity", "conditions": { "entity": [ { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "type": "cataclysm:netherite_monstrosity" } } ] } },
+    "harbinger": { "trigger": "minecraft:player_killed_entity", "conditions": { "entity": [ { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "type": "cataclysm:the_harbinger" } } ] } },
+    "leviathan": { "trigger": "minecraft:player_killed_entity", "conditions": { "entity": [ { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "type": "cataclysm:the_leviathan" } } ] } }
+  },
+  "requirements": [ [ "ender_guardian", "ignis", "netherite_monstrosity", "harbinger", "leviathan" ] ],
+  "rewards": { "experience": 500 }
+}
