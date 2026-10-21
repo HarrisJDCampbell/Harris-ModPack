@@ -194,6 +194,10 @@ hash = "d18f1ea4c6c1c2f99f18a8725d11e14c93abd29988df24c967794fc52e9c969c"
 metafile = true
 
 [[files]]
+file = "mods/harris-1.0.0.jar"
+hash = "58794be6a27650618c62778ae97c5f80b7dafe7f02c24fa210929599f5f01da2"
+
+[[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "4601b9be31b6e131dca8a148c974d015444bcac7c82fcb66fbd8751a67933a5d"
 metafile = true
@@ -274,8 +278,8 @@ hash = "e0f1cef5482844e62c6fc3c7771fc9ef8385c47092248f76aa1fa271220b24e8"
 metafile = true
 
 [[files]]
-file = "mods/olly-1.0.0.jar"
-hash = "786796956b401678c45852e53e4ceac7a5d3e7fb5bb3bc1ff1ea945737eb4cd5"
+file = "mods/olly-1.1.0.jar"
+hash = "c50b3ee23336c3dcd21a437de986ba53bbfedc35d2787586e81bda8bac046573"
 
 [[files]]
 file = "mods/owo-lib.pw.toml"
