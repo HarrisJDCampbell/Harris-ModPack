@@ -1,11 +1,11 @@
 # Build output
 dist/
-build/
 
-# Local test instances / downloaded jars
+# Local test instances (smoke tests, scratch servers)
 .test/
-*.jar
-!tools/*.jar
+
+# Python
+__pycache__/
 
 # macOS
 .DS_Store
