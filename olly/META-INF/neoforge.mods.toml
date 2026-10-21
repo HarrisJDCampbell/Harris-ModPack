@@ -8,13 +8,13 @@ issueTrackerURL = "https://github.com/HarrisJDCampbell/Harris-ModPack/issues"
 
 [[mods]]
 modId = "olly"
-version = "1.0.0"
+version = "1.1.0"
 displayName = "Olly"
 authors = "Harris Campbell"
 logoFile = "olly_logo.png"
 description = '''
 The heart of Harris ModPack. Name a dog Olly and he becomes the goodest boy:
-bigger, tougher, faster, and he fights cows. Also ships the Harris Field Guide,
+Olly-sized, tougher, faster, and he fights cows. Also ships the Harris Field Guide,
 custom advancements and splash texts.
 '''
 

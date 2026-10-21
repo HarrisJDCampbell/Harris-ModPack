@@ -3,6 +3,9 @@
 execute as @e[type=#olly:good_boys,name="Olly",tag=!olly.blessed] at @s run function olly:bless
 execute as @e[type=#olly:good_boys,name="olly",tag=!olly.blessed] at @s run function olly:bless
 
+# Migrate dogs blessed by older versions of this mod.
+execute as @e[type=#olly:good_boys,tag=olly.blessed,tag=!olly.v2] run function olly:upgrade_v2
+
 # He fights cows: when a cow is close, Olly gets fired up.
 execute as @e[type=#olly:good_boys,tag=olly.blessed] at @s if entity @e[type=minecraft:cow,distance=..10] run function olly:cow_spotted
 
