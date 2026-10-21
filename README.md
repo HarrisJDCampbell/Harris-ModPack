@@ -8,9 +8,32 @@ This modpack started as a winter break project to keep my brain from turning to 
 My dog Olly made it in. He fights cows.
 </p>
 
-<p align="center"><b>Minecraft 1.21.1 · NeoForge 21.1 · 85 mods + 2 of our own · one-command install</b></p>
+<p align="center"><b>Minecraft 1.21.1 · NeoForge 21.1 · 84 mods + 2 of our own · one-command install</b></p>
 
 ---
+
+## Get it running
+
+**Mac** (needs [Homebrew](https://brew.sh) and a Minecraft account):
+
+```sh
+git clone https://github.com/HarrisJDCampbell/Harris-ModPack.git
+cd Harris-ModPack
+./install.sh
+```
+
+1. The script installs whatever's missing (Java 21, [Prism Launcher](https://prismlauncher.org)), downloads
+   and hash-checks every mod, and builds a Prism instance called **Harris ModPack** with 8 GB of RAM.
+2. Prism opens. First time only: finish its setup screens, then **Accounts → Add Microsoft** and sign in.
+3. Select **Harris ModPack** → **Launch**.
+
+**Update:** `git pull && ./install.sh`. Only changed mods download; your worlds and settings are left alone.
+
+**Windows / Linux:** install [Prism Launcher](https://prismlauncher.org) and Python 3.11+, clone the repo, then
+run `python3 scripts/modpack.py install`. Prism offers to download Java on first launch.
+
+**Other launchers (Modrinth App, ATLauncher):** `make export` (needs `make tools` once) builds
+`dist/Harris-ModPack-<version>.mrpack`; import that file.
 
 ## What's in it
 
@@ -35,26 +58,6 @@ pixel art, and it's the best food in the game.
 **Polish.** A built-in field guide on first join, a custom advancement tab, splash texts, keybind conflicts
 already sorted, Complementary shaders one key away (`K`), and a performance stack (Sodium, Lithium, FerriteCore,
 ModernFix, Entity Culling, ImmediatelyFast) so it all runs well.
-
-## Install (macOS)
-
-You need [Homebrew](https://brew.sh) and a Minecraft account.
-
-```sh
-git clone https://github.com/HarrisJDCampbell/Harris-ModPack.git
-cd Harris-ModPack
-./install.sh
-```
-
-That installs Python, Java 21 and [Prism Launcher](https://prismlauncher.org) if you don't have them, builds a
-Prism instance called **Harris ModPack** (8 GB RAM, every mod downloaded and hash-checked), and opens
-Prism. First time only: sign in with your Microsoft account in Prism. Then select the pack and hit **Launch**.
-
-**Updating:** `git pull && ./install.sh`. Only changed files are downloaded, and mods that were removed from the
-pack are removed from your instance. Your worlds, settings and screenshots are never touched.
-
-**Not on a Mac / using another launcher?** `make export` builds `dist/Harris-ModPack-1.0.0.mrpack`, which imports
-straight into Prism, the Modrinth App or ATLauncher on any OS.
 
 ## Playing with friends
 
