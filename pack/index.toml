@@ -6,6 +6,11 @@ hash = "cc3f6e6e8f1838d16e47cce9241e32176279673efb1438ff4451ccffa9579b14"
 metafile = true
 
 [[files]]
+file = "mods/ambientsounds.pw.toml"
+hash = "1801f6f6bf0bd7eaf33544c0ad137f9162aa35239a030efe29a899f5c28bddfa"
+metafile = true
+
+[[files]]
 file = "mods/amendments.pw.toml"
 hash = "27bf52b4265eda868c46a325f3a86cec1db5ff24ffb808aed671972d51883792"
 metafile = true
@@ -103,6 +108,11 @@ metafile = true
 [[files]]
 file = "mods/createaddition.pw.toml"
 hash = "e5052e0fcba9af1e3c6c0734829b441bc5a23012108bf203ca01825ca12ff6b1"
+metafile = true
+
+[[files]]
+file = "mods/creativecore.pw.toml"
+hash = "63d1560de24b53cad7052d19c1a44b4eab64ad9f696d01c9f2a72fccd5540557"
 metafile = true
 
 [[files]]
@@ -246,8 +256,18 @@ hash = "6ea52b0dccdc5110b48ac9d5528fc2accb1c970b1fbcae34120e16001ddf115f"
 metafile = true
 
 [[files]]
+file = "mods/not-enough-animations.pw.toml"
+hash = "e0f1cef5482844e62c6fc3c7771fc9ef8385c47092248f76aa1fa271220b24e8"
+metafile = true
+
+[[files]]
 file = "mods/owo-lib.pw.toml"
 hash = "6514f98b34602b789fc2dbcafe7a67468d1c94d74965a0142a79b7ab23628a9a"
+metafile = true
+
+[[files]]
+file = "mods/particle-rain.pw.toml"
+hash = "0036fedda388192221893df1b2e5c1e23af000f98c52fea383e6d2d1e85a3bcd"
 metafile = true
 
 [[files]]
@@ -298,6 +318,11 @@ metafile = true
 [[files]]
 file = "mods/sophisticated-storage.pw.toml"
 hash = "9f50efe25b9ab10d111c215989b60adcfd2cc7d7caa9d9cc5d4c1e525125fea6"
+metafile = true
+
+[[files]]
+file = "mods/sound-physics-remastered.pw.toml"
+hash = "258a77de0a6db4c9ab045cbb240bcf4eac0dbbca3f6bc981fb461e55c247f23f"
 metafile = true
 
 [[files]]
@@ -398,4 +423,14 @@ metafile = true
 [[files]]
 file = "mods/yungs-extras.pw.toml"
 hash = "cfb7ce4c2b00cedd2e61f7d345b824d6bcc1471021668d2319ee2e4079108639"
+metafile = true
+
+[[files]]
+file = "shaderpacks/bsl-shaders.pw.toml"
+hash = "8e9066219882825d46a80f11057be2eacde6245780b42c49b8c8c3cb3921c893"
+metafile = true
+
+[[files]]
+file = "shaderpacks/complementary-reimagined.pw.toml"
+hash = "507cb3963240110bc71ed7c75cac1682e66d3609536b0bc5ef90a01db3cce21f"
 metafile = true
