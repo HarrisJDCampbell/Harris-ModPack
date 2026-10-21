@@ -41,8 +41,8 @@ MANIFEST_NAME = ".harris-modpack.json"
 INSTANCE_ID = "HarrisModPack"
 ICON_KEY = "harris_modpack"
 # GC flags shared by the Prism instance, the server and the smoke test, so the test
-# always runs what players run. G1, not ZGC: on macOS, ZGC crashes the game inside
-# Apple's Metal driver within seconds of loading a world (reproduced on Java 21).
+# always runs what players run. Plain G1 with a short pause target: the stock,
+# best-tested collector for Minecraft.
 GC_ARGS = ["-XX:+UseG1GC", "-XX:MaxGCPauseMillis=50"]
 JAVA21_CANDIDATES = [
     "/opt/homebrew/opt/openjdk@21/bin/java",
