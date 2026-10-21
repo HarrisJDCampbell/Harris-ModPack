@@ -101,6 +101,9 @@ def write_level_dat(world: Path) -> None:
         "allowCommands": Byte(1),
         "hardcore": Byte(0),
         "initialized": Byte(0),
+        # Modded worldgen can count as "experimental"; skip the warning screen that
+        # would otherwise sit there waiting for a click.
+        "confirmedExperimentalSettings": Byte(1),
         "Version": {"Id": Int(3955), "Name": "1.21.1", "Series": "main", "Snapshot": Byte(0)},
         "DataPacks": {"Enabled": ["vanilla"], "Disabled": []},
         "WorldGenSettings": {
