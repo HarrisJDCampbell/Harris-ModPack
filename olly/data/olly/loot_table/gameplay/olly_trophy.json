@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone",
+          "functions": [
+            { "function": "minecraft:set_name", "target": "item_name", "name": { "text": "Olly's Trophy", "color": "gold" } },
+            { "function": "minecraft:set_lore", "mode": "replace_all", "lore": [ { "text": "He fights cows. He wins.", "color": "gray", "italic": true } ] },
+            { "function": "minecraft:set_custom_data", "tag": "{olly_trophy:1b}" },
+            { "function": "minecraft:set_components", "components": { "minecraft:enchantment_glint_override": true } }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "minecraft:beef", "functions": [ { "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 1, "max": 2 } } ] }
+      ]
+    }
+  ]
+}
