@@ -320,7 +320,7 @@ def cmd_install(args: argparse.Namespace) -> None:
     prism = Path(args.prism_dir) if args.prism_dir else prism_dir()
     inst = prism / "instances" / INSTANCE_ID
     say(f"Installing into Prism instance: {inst}")
-    if subprocess.run(["pgrep", "-qx", "prismlauncher"]).returncode == 0:
+    if shutil.which("pgrep") and subprocess.run(["pgrep", "-qx", "prismlauncher"]).returncode == 0:
         warn("Prism Launcher is running. That's fine, but restart it if the instance doesn't refresh.")
     inst.mkdir(parents=True, exist_ok=True)
     pack = sync(inst / "minecraft", "client")
