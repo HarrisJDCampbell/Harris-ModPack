@@ -1,12 +1,12 @@
 name = "Harris ModPack"
 author = "Harris Campbell"
-version = "1.0.0"
+version = "1.1.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "bb18dddf8a1c7dcb3d45c4ecd0f7d80830f632fb951c4972f0c07f11c755a2fd"
+hash = "5b472140e8f0db64cad09e0e63ac4bece267b4fde20db19f1a29acd8eccdc146"
 
 [versions]
 minecraft = "1.21.1"

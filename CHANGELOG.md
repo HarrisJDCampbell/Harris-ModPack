@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.1.0
+
+- **Confetti creepers.** Creepers explode into confetti instead of blowing up. Toggle in
+  `config/harris-common.toml` or Mods > Harris > Config.
+- **Mum's Shepherd's Pie**, with its own pixel art, recipe and advancement.
+- **Olly is Olly-sized**: a bit smaller than a wolf. Existing Ollys shrink automatically.
+- New Harris Java mod (`mod/`), text-file pixel art (`make art`) and an image-to-texture tool
+  (`make pixelize`).
+- **Removed Distant Horizons.** Its bundled native SQLite library corrupted memory on macOS and crashed
+  the game shortly after joining a world, on both Homebrew's and Mojang's Java. Default render distance
+  goes from 12 to 16 chunks to make up for it.
+- Smoke test now also checks confetti creepers, Olly's size and the pie.
+
 ## 1.0.0
 
 First release.
