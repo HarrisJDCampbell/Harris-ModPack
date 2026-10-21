@@ -1,6 +1,19 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/defaultoptions/keybindings.txt"
+hash = "68c9483799a8c4672102c13c853dde7f49a774e49dc234903920ccd3df5dfb42"
+
+[[files]]
+file = "config/defaultoptions/options.txt"
+hash = "6af5db2e46b10128349bf538158bb91b8b091fcb7757ca31b7da400885555734"
+
+[[files]]
+file = "config/iris.properties"
+hash = "d822a7fcfb2f8c9ed6593077c80b80602273da9ace92f10b357b4ee014cd98a6"
+preserve = true
+
+[[files]]
 file = "mods/aether.pw.toml"
 hash = "cc3f6e6e8f1838d16e47cce9241e32176279673efb1438ff4451ccffa9579b14"
 metafile = true
@@ -259,6 +272,10 @@ metafile = true
 file = "mods/not-enough-animations.pw.toml"
 hash = "e0f1cef5482844e62c6fc3c7771fc9ef8385c47092248f76aa1fa271220b24e8"
 metafile = true
+
+[[files]]
+file = "mods/olly-1.0.0.jar"
+hash = "29765f24a94f9f2fabae3a60f1c509542e5e6a603bf20bdbf61fe7804896ee25"
 
 [[files]]
 file = "mods/owo-lib.pw.toml"

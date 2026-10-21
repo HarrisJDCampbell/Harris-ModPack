@@ -1,0 +1,4 @@
+key_iris.keybind.reload:key.keyboard.unknown:NONE
+key_gui.xaero_new_waypoint:key.keyboard.n:NONE
+key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.unknown:NONE
+key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.unknown:NONE
