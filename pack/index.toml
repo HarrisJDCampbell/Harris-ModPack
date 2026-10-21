@@ -1,6 +1,51 @@
 hash-format = "sha256"
 
 [[files]]
+file = "mods/copycats.pw.toml"
+hash = "4892513825f87217b6cc3f4d3ec4dcd3965b96dede8cc10d6578c4769102ae8e"
+metafile = true
+
+[[files]]
+file = "mods/create-big-cannons.pw.toml"
+hash = "a0e9ff95570cd9af3374ca8b44aa095447baf94e565f46ae99819d52a9b48dc1"
+metafile = true
+
+[[files]]
+file = "mods/create-central-kitchen.pw.toml"
+hash = "3752b1dcdfebbb1e79c97c847095153155d64636576a9c0ac11ffa6506c62922"
+metafile = true
+
+[[files]]
+file = "mods/create-connected.pw.toml"
+hash = "6ac362d60bc8b13e03a5b6b9cdf9c7676f65d3e89e87c66f18514e7ee164cdb0"
+metafile = true
+
+[[files]]
+file = "mods/create-deco.pw.toml"
+hash = "67a405e6307f900d168deaa954a4309c3b44a6025e4efd7b8e774b6f9d3a69cd"
+metafile = true
+
+[[files]]
+file = "mods/create-dragons-plus.pw.toml"
+hash = "dcbb37e828a2f915e64a2ef839a742761a553a2e3b923b000ffba95db7503ac3"
+metafile = true
+
+[[files]]
+file = "mods/create-enchantment-industry.pw.toml"
+hash = "5f76bdf0fe120e62cc3ae298e911727fa45c70dd191fd9c2b213029c7601576c"
+metafile = true
+
+[[files]]
+file = "mods/create.pw.toml"
+hash = "dcaf5f2e28db0b9a127d0167456832341045ddc9aec058c3d9fcf53f618d2404"
+metafile = true
+
+[[files]]
+file = "mods/createaddition.pw.toml"
+hash = "e5052e0fcba9af1e3c6c0734829b441bc5a23012108bf203ca01825ca12ff6b1"
+metafile = true
+
+[[files]]
 file = "mods/distanthorizons.pw.toml"
 hash = "0c20fea3407ed0db85b4b171f1820a24987f2659946fadd30bae044205041b09"
 metafile = true
@@ -8,6 +53,11 @@ metafile = true
 [[files]]
 file = "mods/entityculling.pw.toml"
 hash = "426238488c9ffd843f661f8bc74aa8e585fa6b4d342c43c4ba4cb8451298b725"
+metafile = true
+
+[[files]]
+file = "mods/farmers-delight.pw.toml"
+hash = "97347efd9e808841d72fe3599da8a11add8422e97f89ae1c85cdfc0acfa18f96"
 metafile = true
 
 [[files]]
@@ -26,6 +76,11 @@ hash = "db1c1e6382878b78e994dba1b9026935f8d1c5ca685c89d2437858e0a0dcab58"
 metafile = true
 
 [[files]]
+file = "mods/kotlin-for-forge.pw.toml"
+hash = "712a69b3569a8055979de6eea262068535fe182dffb3833e53e5833e9cbf9766"
+metafile = true
+
+[[files]]
 file = "mods/lithium.pw.toml"
 hash = "51e129832b04acd57da470fc41725bad5e101b6a6b1d4901fd8ea7a92b14e13d"
 metafile = true
@@ -33,6 +88,16 @@ metafile = true
 [[files]]
 file = "mods/modernfix.pw.toml"
 hash = "d10fbef1555f5277563b9cbf7683811ac0f38c1af41646e6ce5c3aaa2149425d"
+metafile = true
+
+[[files]]
+file = "mods/rpl.pw.toml"
+hash = "7815e5a589de0c02a62ae83590e1f75f4d0c269e48f2435ce2ac448976ddf49f"
+metafile = true
+
+[[files]]
+file = "mods/slice-and-dice.pw.toml"
+hash = "3c24accda8011a6a5e04c49c40e39617bb04ab3a549d8f2e8180d3246fddac39"
 metafile = true
 
 [[files]]
