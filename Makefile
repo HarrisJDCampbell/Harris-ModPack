@@ -2,7 +2,7 @@
 PY ?= python3
 PACK := pack
 
-.PHONY: help install update test check olly mod art refresh export server outdated tools clean
+.PHONY: help install update test check olly mod art pixelize refresh export server outdated tools clean
 
 help:
 	@echo "make install    install/update the Prism instance (same as ./install.sh --no-open)"
@@ -11,6 +11,7 @@ help:
 	@echo "make olly       rebuild the Olly mod jar after editing olly/"
 	@echo "make mod        build the Harris Java mod (mod/) into the pack"
 	@echo "make art        render art/*.txt pixel art into textures"
+	@echo "make pixelize IN=pic.png NAME=item_name   turn any image (a drawing, a photo) into a 16x16 item texture"
 	@echo "make outdated   list mods with newer versions on Modrinth"
 	@echo "make update     update every mod to its newest version (review, then make test)"
 	@echo "make export     build dist/Harris-ModPack-<version>.mrpack for friends"
@@ -28,6 +29,14 @@ check:
 
 olly:
 	$(PY) scripts/modpack.py build-olly
+
+VENV := .venv
+$(VENV)/bin/python:
+	$(PY) -m venv $(VENV) && $(VENV)/bin/pip install -q pillow
+
+pixelize: $(VENV)/bin/python
+	@test -n "$(IN)" -a -n "$(NAME)" || (echo "usage: make pixelize IN=picture.png NAME=item_name [ARGS='--colors 10 --outline']" && exit 1)
+	$(VENV)/bin/python scripts/pixelize.py "$(IN)" mod/src/main/resources/assets/harris/textures/item/$(NAME).png $(ARGS)
 
 art:
 	$(PY) scripts/pixelart.py
