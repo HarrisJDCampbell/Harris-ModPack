@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/icon.png" width="96" alt="Olly"></p>
+<p align="center"><img src="assets/olly-trot.gif" width="220" alt="Olly, a small black and white dog, trotting"></p>
 
 <h1 align="center">Harris ModPack</h1>
 
