@@ -1,0 +1,10 @@
+{
+  "name": "Mum's Shepherd's Pie",
+  "icon": "harris:mums_shepherds_pie",
+  "category": "olly:olly",
+  "sortnum": 2,
+  "pages": [
+    { "type": "patchouli:spotlight", "item": "harris:mums_shepherds_pie", "title": "Mum's Shepherd's Pie", "text": "The best food in the game. It isn't close.$(br2)Restores almost a full hunger bar, heals you for 20 seconds and gives you two extra hearts of padding for two minutes." },
+    { "type": "patchouli:crafting", "recipe": "harris:mums_shepherds_pie", "text": "Cooked mutton, two baked potatoes, a carrot, an onion (Farmer's Delight) and a bowl. Mum's recipe. Not up for discussion." }
+  ]
+}

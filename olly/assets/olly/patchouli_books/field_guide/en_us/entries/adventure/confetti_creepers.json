@@ -1,0 +1,10 @@
+{
+  "name": "Confetti Creepers",
+  "icon": "minecraft:creeper_head",
+  "category": "olly:adventure",
+  "sortnum": 3,
+  "pages": [
+    { "type": "patchouli:text", "text": "Creepers still sneak up on you. They still hiss. They still swell up.$(br2)Then they explode into $(l)confetti$().$(br2)No crater, no damage, just a party. Charged creepers throw twice as much. Be there when one goes off for the $(o)Surprise Party!$() advancement." },
+    { "type": "patchouli:text", "text": "Miss the danger? Turn it off in $(l)config/harris-common.toml$() (set $(l)confettiCreepers = false$()), or from the Mods menu: Harris > Config." }
+  ]
+}
