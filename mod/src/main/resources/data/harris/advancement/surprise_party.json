@@ -1,0 +1,9 @@
+{
+  "parent": "olly:root",
+  "display": {
+    "icon": { "id": "minecraft:firework_rocket" },
+    "title": { "text": "Surprise Party!" },
+    "description": { "text": "Be there when a creeper goes off. Turns out it just wanted to celebrate." }
+  },
+  "criteria": { "party": { "trigger": "minecraft:impossible" } }
+}

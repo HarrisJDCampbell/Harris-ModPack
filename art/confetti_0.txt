@@ -1,0 +1,14 @@
+# Confetti sprites are white; the game tints each piece a random party colour.
+out: mod/src/main/resources/assets/harris/textures/particle/confetti_0.png
+palette:
+  w = 255 255 255
+  g = 222 222 222
+grid:
+  ........
+  ........
+  ..wwww..
+  ..wwwg..
+  ..wwwg..
+  ..wggg..
+  ........
+  ........

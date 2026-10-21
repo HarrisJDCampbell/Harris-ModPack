@@ -5,6 +5,8 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.config.ModConfig;
+import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import org.slf4j.Logger;
 
@@ -23,8 +25,11 @@ public final class HarrisMod {
 
     public HarrisMod(IEventBus modBus, ModContainer container) {
         ModItems.ITEMS.register(modBus);
+        ModParticles.PARTICLE_TYPES.register(modBus);
+        container.registerConfig(ModConfig.Type.COMMON, HarrisConfig.SPEC);
 
         modBus.addListener(HarrisMod::addToCreativeTabs);
+        NeoForge.EVENT_BUS.addListener(ConfettiCreepers::onExplosionStart);
     }
 
     private static void addToCreativeTabs(BuildCreativeModeTabContentsEvent event) {
