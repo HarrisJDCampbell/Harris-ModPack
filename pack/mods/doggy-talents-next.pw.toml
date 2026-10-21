@@ -1,0 +1,13 @@
+name = "Doggy Talents Next"
+filename = "DoggyTalentsNext-1.21.1-1.19.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/oXgmplvv/versions/BKs2urib/DoggyTalentsNext-1.21.1-1.19.1.jar"
+hash-format = "sha512"
+hash = "17d1f743011579b820ddc31b782e4ce292972cfdc415994641228c4a9d81e11d00d2825b3d36f93079e3231cd60b35a7f577214d9ce52db1b1e6169336419bdb"
+
+[update]
+[update.modrinth]
+mod-id = "oXgmplvv"
+version = "BKs2urib"
