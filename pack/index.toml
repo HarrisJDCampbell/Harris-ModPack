@@ -275,7 +275,7 @@ metafile = true
 
 [[files]]
 file = "mods/olly-1.0.0.jar"
-hash = "29765f24a94f9f2fabae3a60f1c509542e5e6a603bf20bdbf61fe7804896ee25"
+hash = "786796956b401678c45852e53e4ceac7a5d3e7fb5bb3bc1ff1ea945737eb4cd5"
 
 [[files]]
 file = "mods/owo-lib.pw.toml"
