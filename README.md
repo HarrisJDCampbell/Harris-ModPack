@@ -4,7 +4,7 @@
 
 <p align="center">
 Minecraft taught me everything I know about engineering (and XP farm ethics).<br>
-This modpack started as a winter break project to keep my brain from turning to mush,.<br>
+This modpack started as a winter break project to keep my brain from turning to mush,<br>
 and now it's a full modpack I come back to and add to here and then. .<br>
 My dog Olly made it in. He fights cows.
 </p>
