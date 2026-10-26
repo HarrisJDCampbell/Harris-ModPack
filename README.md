@@ -9,7 +9,7 @@ and now it's a full modpack I come back to and add to here and then. .<br>
 My dog Olly made it in. He fights cows.
 </p>
 
-<p align="center"><b>Minecraft 1.21.1 · NeoForge 21.1 · 84 mods + 2 of our own · one-command install</b></p>
+<p align="center"><b>Minecraft 1.21.1 · NeoForge 21.1 · 84 mods + 2 of my own · one-command install</b></p>
 
 ---
 
